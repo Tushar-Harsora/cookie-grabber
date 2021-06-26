@@ -1,0 +1,28 @@
+{
+	"name": "cookie-grabber",
+	"description": "This extension is used by CPSubmit for sending cookies from browser to application",
+	"version": "0.1",
+	"manifest_version": 3,
+	"host_permissions": ["*://*/"],
+	"permissions": [
+		"storage",
+		"cookies"
+	],
+	"background": {
+		"service_worker": "background-wrapper.js"
+	},
+	"action": {
+		"default_icon": {
+			"16": "images/favicon-16x16.png",
+			"32": "images/favicon-32x32.png",
+			"48": "images/favicon-48x48.png",
+			"128": "images/favicon-128x128.png"
+		}
+	},
+	"icons": {
+		"16": "images/favicon-16x16.png",
+		"32": "images/favicon-32x32.png",
+		"48": "images/favicon-48x48.png",
+		"128": "images/favicon-128x128.png"
+	}
+}
